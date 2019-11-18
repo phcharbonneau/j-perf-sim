@@ -31,15 +31,15 @@ public class MetaspaceLeakServiceImpl implements MetaspaceLeakService {
 
 				// Create a new classloader instance
 				//URLClassLoader newClassLoader = new URLClassLoader(fictiousClassloaderURL);
-				/*URLClassLoader newClassLoader = new URLClassLoader(fictiousClassloaderJAR, fictiousClassloaderURL,Thread.currentThread().getContextClassLoader());
+				URLClassLoader newClassLoader = new URLClassLoader(fictiousClassloaderURL,Thread.currentThread().getContextClassLoader());
 				
 				// Create a new Proxy instance
 				ClassA t = (ClassA) Proxy.newProxyInstance(newClassLoader,
 						new Class<?>[] { ClassA.class },
-						new ClassAInvocationHandler(new ClassAImpl()));*/
+						new ClassAInvocationHandler(new ClassAImpl()));
 				
 				// Add the new Proxy instance to the leaking HashMap
-				//classLeakingMap.put(fictiousClassloaderJAR, t);
+				classLeakingMap.put(fictiousClassloaderJAR, t);
 				
 			}
 		} 
