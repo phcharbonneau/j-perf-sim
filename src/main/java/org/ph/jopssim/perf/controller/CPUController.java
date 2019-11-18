@@ -17,7 +17,7 @@ public class CPUController {
 	
 	private static Logger log = LogManager.getLogger(PerfTraining1Controller.class);
 	
-	private final static int MEM_ALLOCATION_MB = 10 * 1024 * 1024; // 1 MB memory allocation
+	private final static int MEM_ALLOCATION_MB = 1 * 1024 * 1024; // MB memory allocation
 	
 	@Autowired
 	public CPUController() {}
@@ -32,7 +32,7 @@ public class CPUController {
 		// CPU spin and allocation of 1MB memory OnHeap per iteration
 		for (int i=0; i<spinTime; i++) {
 		
-			// allocate memory but don't do anything
+			// allocate memory but don't do anything -> eligible for GC on method exit
 			byte[] dataSize = new byte[MEM_ALLOCATION_MB];
 		}
 		
