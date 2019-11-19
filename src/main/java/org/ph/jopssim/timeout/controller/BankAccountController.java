@@ -12,7 +12,7 @@ public class BankAccountController {
     public long banknb(@RequestParam(value="userID", defaultValue="PH") String userID) {
 		
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(10000);
 		} catch (InterruptedException e) {}
 		
 		// return the current Bank account Nb

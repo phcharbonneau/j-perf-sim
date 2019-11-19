@@ -9,8 +9,8 @@ import org.springframework.web.client.RestTemplate;
 @Service
 public class BankAccountServiceImpl implements BankAccountService {
 	
-	private String bankAccountMicroserviceURL = "http://localhost:9001/banknb";
-	private int timeoutValue = 1000; // universal value of 30 secs
+	private String bankAccountMicroserviceURL = "http://j-perf-sim-ph-wildfly10.b9ad.pro-us-east-1.openshiftapps.com/banknb";
+	private int timeoutValue = 100000; // universal value of 30 secs
 	private String accountNb = null;
 	
 	@Override

@@ -26,9 +26,6 @@ public class TimeoutManagementController {
 		// obtain the current user bank account number
 		accountNb = service.getAccountNb(userID);
 		
-		// Log the Bank account to the Microservice local file system
-		System.out.println("User "+userID +" has the following bank account nb: "+accountNb);
-		
 		// return the current Bank account Nb
 		return new BankAccount(accountNb);
     }
