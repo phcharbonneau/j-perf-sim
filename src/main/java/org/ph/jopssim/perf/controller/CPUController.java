@@ -34,6 +34,8 @@ public class CPUController {
 		
 			// allocate memory but don't do anything -> eligible for GC on method exit
 			byte[] dataSize = new byte[MEM_ALLOCATION_MB];
+			
+			System.out.println("CPU MB allocation:"+MEM_ALLOCATION_MB);
 		}
 		
 		return spin;
