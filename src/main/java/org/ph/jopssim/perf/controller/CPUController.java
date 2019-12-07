@@ -3,6 +3,8 @@ package org.ph.jopssim.perf.controller;
 import java.util.ArrayList;
 import java.util.Collection;
 
+import javax.servlet.http.HttpServletResponse;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.ph.jopssim.perf.model.User;
@@ -60,4 +62,10 @@ public class CPUController {
 		
 		return coll;
     }
+	
+	@GetMapping("/http-servlet-response")
+	public String usingHttpServletResponse(HttpServletResponse response) {
+	    response.addHeader("Access-Control-Allow-Origin", "ph-react-ph-wildfly10.b9ad.pro-us-east-1.openshiftapps.com");
+	    return "Response with header using HttpServletResponse";
+	}
 }
