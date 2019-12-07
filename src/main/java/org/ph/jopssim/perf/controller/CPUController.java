@@ -49,8 +49,10 @@ public class CPUController {
     }
 	
 	@GetMapping("/users")
-    Collection<User> users() {
+    Collection<User> users(final HttpServletResponse response) {
         
+		response.addHeader("Access-Control-Allow-Origin", "ph-react-ph-wildfly10.b9ad.pro-us-east-1.openshiftapps.com");
+		
 		Collection<User> coll = new ArrayList<User>();
 		
 		for (int i=0; i<4; i++) {
@@ -63,9 +65,4 @@ public class CPUController {
 		return coll;
     }
 	
-	@GetMapping("/http-servlet-response")
-	public String usingHttpServletResponse(HttpServletResponse response) {
-	    response.addHeader("Access-Control-Allow-Origin", "ph-react-ph-wildfly10.b9ad.pro-us-east-1.openshiftapps.com");
-	    return "Response with header using HttpServletResponse";
-	}
 }
