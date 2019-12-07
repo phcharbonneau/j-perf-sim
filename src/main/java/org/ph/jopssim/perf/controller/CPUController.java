@@ -1,8 +1,13 @@
 package org.ph.jopssim.perf.controller;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.ph.jopssim.perf.model.UserData;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -39,5 +44,17 @@ public class CPUController {
 		}
 		
 		return spin;
+    }
+	
+	@GetMapping("/users")
+    Collection<UserData> users() {
+        
+		Collection<UserData> coll = new ArrayList<UserData>();
+		
+		for (int i=0; i<4; i++) {
+			coll.add(new UserData("PH"+i));
+        }
+		
+		return coll;
     }
 }
