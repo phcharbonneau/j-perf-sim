@@ -51,7 +51,7 @@ public class CPUController {
 	@GetMapping("/users")
     Collection<User> users(final HttpServletResponse response) {
         
-		response.addHeader("Access-Control-Allow-Origin", "ph-react-ph-wildfly10.b9ad.pro-us-east-1.openshiftapps.com");
+		response.addHeader("Access-Control-Allow-Origin", "http://ph-react-ph-wildfly10.b9ad.pro-us-east-1.openshiftapps.com");
 		
 		Collection<User> coll = new ArrayList<User>();
 		
