@@ -5,7 +5,7 @@ import java.util.Collection;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.ph.jopssim.perf.model.UserData;
+import org.ph.jopssim.perf.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -47,12 +47,15 @@ public class CPUController {
     }
 	
 	@GetMapping("/users")
-    Collection<UserData> users() {
+    Collection<User> users() {
         
-		Collection<UserData> coll = new ArrayList<UserData>();
+		Collection<User> coll = new ArrayList<User>();
 		
 		for (int i=0; i<4; i++) {
-			coll.add(new UserData("PH"+i));
+			User newUser = new User("PH"+i);
+			newUser.setId(Integer.toString(i));
+			
+			coll.add(newUser);
         }
 		
 		return coll;

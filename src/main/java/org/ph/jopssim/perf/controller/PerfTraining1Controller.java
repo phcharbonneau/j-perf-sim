@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.ph.jopssim.perf.model.UserData;
+import org.ph.jopssim.perf.model.User;
 import org.ph.jopssim.perf.service.DataService;
 import org.ph.jopssim.perf.service.DatabaseService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,14 +29,14 @@ public class PerfTraining1Controller {
 	}
 	
 	@RequestMapping("/userlist")
-    public List<UserData> userList(@RequestParam(value="userID", defaultValue="PH") String userID) {
+    public List<User> userList(@RequestParam(value="userID", defaultValue="PH") String userID) {
 		
 		log.error("log4j in action!");
 		System.out.println("HttpServletRequest: "+request.hashCode());
 		System.out.println("HttpServletRequest session: "+request.getSession().getId());
 		
 		// obtain the list of all users (5 millions) from the DB
-		List<UserData> userList = null;//dbService.getAllUsers();
+		List<User> userList = null;//dbService.getAllUsers();
 		
 		// Do some other work for 5 secs...
 		//doWork(5);
@@ -46,10 +46,10 @@ public class PerfTraining1Controller {
     }
 	
 	@RequestMapping("/userdata")
-    public UserData userData(@RequestParam(value="userID", defaultValue="PH") String userID) {
+    public User userData(@RequestParam(value="userID", defaultValue="PH") String userID) {
 		
 		// obtain the user data details (100MB payload) from the remote external system...
-		UserData userData = dataService.getUserAccountData(userID);
+		User userData = dataService.getUserAccountData(userID);
 		
 		// Do some other work for 5 secs...
 		doWork(5);

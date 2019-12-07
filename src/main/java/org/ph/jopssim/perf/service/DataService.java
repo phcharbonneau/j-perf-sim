@@ -1,8 +1,8 @@
 package org.ph.jopssim.perf.service;
 
-import org.ph.jopssim.perf.model.UserData;
+import org.ph.jopssim.perf.model.User;
 
 public interface DataService {
 	
-	public UserData getUserAccountData(String userID);
+	public User getUserAccountData(String userID);
 }
