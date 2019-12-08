@@ -33,12 +33,14 @@ public class SoftwareController {
 		/****** TODO: automate data mapping and refresh where possible..****/
 		/**********  Build list of all languages ************************/
 		SoftwareAsset java5_ora = new SoftwareAsset(Software.LANGUAGE, Vendor.ORACLE, LifeCycle.EOL);
+		java5_ora.setId("1");
 		java5_ora.setRefURL("https://docs.oracle.com/en/middleware/fusion-middleware/weblogic-server/12.2.1.4/index.html");
 		java5_ora.setLastFreePublicUpdateDate("2009-11-01");
 		java5_ora.setExtendedSupportDate("2015-04-01");
 		coll.add(java5_ora);
 		
 		SoftwareAsset java6_ora = new SoftwareAsset(Software.LANGUAGE, Vendor.ORACLE, LifeCycle.EOL);
+		java6_ora.setId("2");
 		java6_ora.setRefURL("https://docs.oracle.com/en/middleware/fusion-middleware/weblogic-server/12.2.1.4/index.html");
 		java6_ora.setLastFreePublicUpdateDate("2013-04-01");
 		java6_ora.setExtendedSupportDate("2018-12-01");
