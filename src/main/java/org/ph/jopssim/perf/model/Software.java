@@ -15,11 +15,13 @@ public class Software {
 	private Category category;
 	private Vendor vendor;
 	private LifeCycle lifeCycle;
+	private String version;
 	private String refURL;
 	private Date lastFreePublicUpdateDate;
 	private Date extendedSupportDate;
 	
 	public Software(Technology technology, Category software, Vendor vendor, LifeCycle lifeCycle) {
+		this.technology = technology;
 		this.category = software;
 		this.vendor = vendor;
 		this.lifeCycle = lifeCycle;
@@ -55,6 +57,14 @@ public class Software {
 
 	public void setLifeCycle(LifeCycle lifeCycle) {
 		this.lifeCycle = lifeCycle;
+	}
+	
+	public String getVersion() {
+		return version;
+	}
+
+	public void setVersion(String version) {
+		this.version = version;
 	}
 
 	public String getRefURL() {
