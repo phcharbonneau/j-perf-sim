@@ -12,28 +12,15 @@ import java.util.Date;
 public class Software {
 	
 	private Technology technology;
-	private Category category;
-	private Vendor vendor;
 	private LifeCycle lifeCycle;
-	private String version;
 	private String refURL;
 	private Date releaseDate;
 	private Date lastFreePublicUpdateDate;
 	private Date extendedSupportDate;
 	
-	public Software(Technology technology, Category software, Vendor vendor, LifeCycle lifeCycle) {
+	public Software(Technology technology, LifeCycle lifeCycle) {
 		this.technology = technology;
-		this.category = software;
-		this.vendor = vendor;
 		this.lifeCycle = lifeCycle;
-	}
-
-	public Category getCategory() {
-		return category;
-	}
-
-	public void setCategory(Category category) {
-		this.category = category;
 	}
 
 	public Technology getTechnology() {
@@ -44,28 +31,12 @@ public class Software {
 		this.technology = technology;
 	}
 
-	public Vendor getVendor() {
-		return vendor;
-	}
-
-	public void setVendor(Vendor vendor) {
-		this.vendor = vendor;
-	}
-
 	public LifeCycle getLifeCycle() {
 		return lifeCycle;
 	}
 
 	public void setLifeCycle(LifeCycle lifeCycle) {
 		this.lifeCycle = lifeCycle;
-	}
-	
-	public String getVersion() {
-		return version;
-	}
-
-	public void setVersion(String version) {
-		this.version = version;
 	}
 
 	public String getRefURL() {
