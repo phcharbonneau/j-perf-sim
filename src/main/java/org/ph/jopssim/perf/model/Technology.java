@@ -66,5 +66,17 @@ public enum Technology {
 	public Technology getSpecs() {
 		return specs;
 	}
+
+	public Category getCategory() {
+		return category;
+	}
+
+	public String getVersion() {
+		return version;
+	}
+
+	public Vendor getVendor() {
+		return vendor;
+	}
 	
 }
