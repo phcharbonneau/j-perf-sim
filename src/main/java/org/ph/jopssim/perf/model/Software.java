@@ -101,5 +101,15 @@ public class Software {
 		this.releaseDate = newDate;
 	}
 
+	public String getVersion() {
+		return technology.getVersion();
+	}
 	
+	public String getCategory() {
+		return technology.getCategory().toString();
+	}
+	
+	public String getVendor() {
+		return technology.getVendor().toString();
+	}
 }
