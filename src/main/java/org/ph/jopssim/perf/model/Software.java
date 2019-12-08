@@ -112,4 +112,8 @@ public class Software {
 	public String getVendor() {
 		return technology.getVendor().toString();
 	}
+	
+	public boolean isEOL() {
+		return lifeCycle.toString().equals("EOL");
+	}
 }
