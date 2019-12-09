@@ -48,6 +48,10 @@ public class SoftwareController {
 		wls12214_ora.setExtendedSupportDate("2025-08-01");
 		coll.add(wls12214_ora);
 		
+		Software apache_http2441 = new Software(Technology.APACHE_HTTPSERVER_2441);
+		apache_http2441.setRefURL("http://www.apache.org/dist/httpd/Announcement2.4.html");
+		coll.add(apache_http2441);
+		
 		
 		/**********  Build list of all specialized middleware products ************************/
 		
