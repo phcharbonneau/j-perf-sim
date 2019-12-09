@@ -13,7 +13,6 @@ public class Software {
 	
 	private Technology technology;
 	private String refURL;
-	private Date lastFreePublicUpdateDate;
 	private Date extendedSupportDate;
 	
 	public Software(Technology technology) {
@@ -36,24 +35,6 @@ public class Software {
 		this.refURL = refURL;
 	}
 
-	public Date getLastFreePublicUpdateDate() {
-		return lastFreePublicUpdateDate;
-	}
-
-	public void setLastFreePublicUpdateDate(String date) {
-		
-		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-		Date newDate = null;
-		
-		try {
-			newDate = dateFormat.parse(date);
-		} catch (ParseException e) {
-			throw new IllegalArgumentException("Invalid Last Free Update Date format:" +e.getMessage(), e);
-		}
-		
-		this.lastFreePublicUpdateDate = newDate;
-	}
-
 	public Date getExtendedSupportDate() {
 		return extendedSupportDate;
 	}
@@ -74,6 +55,10 @@ public class Software {
 
 	public Date getReleaseDate() {
 		return technology.getReleaseDate();
+	}
+	
+	public Date getLastFreePublicUpdateDate() {
+		return technology.getLastFreePublicUpdateDate();
 	}
 
 	public String getVersion() {
