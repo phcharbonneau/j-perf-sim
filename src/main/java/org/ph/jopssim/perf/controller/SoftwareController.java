@@ -2,6 +2,8 @@ package org.ph.jopssim.perf.controller;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 
 import javax.servlet.http.HttpServletResponse;
 
@@ -58,7 +60,7 @@ public class SoftwareController {
 		
 		
 		/**********  Build list of all specialized middleware products ************************/
-		
+		Collections.sort((List<Software>) coll);
 		return coll;
     }
 }
