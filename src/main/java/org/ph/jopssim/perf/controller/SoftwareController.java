@@ -40,6 +40,7 @@ public class SoftwareController {
 		
 		/**********  Build list of all Middlewares ************************/
 		Software wls12214_ora = new Software(Technology.WLS_12214);
+		wls12214_ora.addTechDependency(Technology.JAVA_EE7);
 		wls12214_ora.setRefURL("https://docs.oracle.com/en/middleware/fusion-middleware/weblogic-server/12.2.1.4/index.html");
 		wls12214_ora.setExtendedSupportDate("2025-08-01");
 		coll.add(wls12214_ora);

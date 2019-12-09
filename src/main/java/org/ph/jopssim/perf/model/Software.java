@@ -2,6 +2,8 @@ package org.ph.jopssim.perf.model;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 
 /**
@@ -12,6 +14,7 @@ import java.util.Date;
 public class Software {
 	
 	private Technology technology;
+	private Collection<Technology> techDependencyList = new ArrayList<Technology>();
 	private String refURL;
 	private Date extendedSupportDate;
 	
@@ -75,5 +78,8 @@ public class Software {
 	
 	public boolean isEol() {
 		return technology.isEol();
+	}
+	public void addTechDependency(Technology tech) {
+		techDependencyList.add(tech);
 	}
 }
