@@ -56,8 +56,8 @@ public class Software {
 		this.extendedSupportDate = newDate;
 	}
 
-	public Date getReleaseDate() {
-		return technology.getReleaseDate();
+	public String getReleaseDate() {
+		return new SimpleDateFormat("yyyy-MM-dd").format(technology.getReleaseDate());
 	}
 	
 	public Date getLastFreePublicUpdateDate() {
