@@ -28,11 +28,13 @@ public class SoftwareController {
 		/****** TODO: automate data mapping and refresh where possible..****/
 		/**********  Build list of all languages ************************/
 		Software java5_ora = new Software(Technology.ORA_JAVA5);
+		java5_ora.addTechDependency(Technology.OPENJDK5);
 		java5_ora.setRefURL("https://www.oracle.com/java/technologies/java-archive-javase5-downloads.html");
 		java5_ora.setExtendedSupportDate("2015-04-01");
 		coll.add(java5_ora);
 		
 		Software java6_ora = new Software(Technology.ORA_JAVA6);
+		java5_ora.addTechDependency(Technology.OPENJDK6);
 		java6_ora.setRefURL("https://www.oracle.com/java/technologies/javase-java-archive-javase6-downloads.htmls");
 		java6_ora.setExtendedSupportDate("2018-12-01");
 		coll.add(java6_ora);
