@@ -47,6 +47,13 @@ public class SoftwareController {
 		
 		
 		/**********  Build list of all Middlewares ************************/
+		Software wls1036_ora = new Software(Technology.WLS_1036);
+		wls1036_ora.addTechDependency(Technology.ORA_JAVA7);
+		wls1036_ora.addTechDependency(Technology.JAVA_EE5);
+		wls1036_ora.setRefURL("https://oracle-base.com/articles/11g/oracle-weblogic-server-11gr1-1036-installation-on-windows-64-bit");
+		wls1036_ora.setExtendedSupportDate("2017-06-01");
+		coll.add(wls1036_ora);
+		
 		Software wls12214_ora = new Software(Technology.WLS_12214);
 		wls12214_ora.addTechDependency(Technology.ORA_JAVA8);
 		wls12214_ora.addTechDependency(Technology.JAVA_EE7);

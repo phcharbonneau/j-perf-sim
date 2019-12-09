@@ -35,9 +35,11 @@ public enum Technology {
 	ORA_JAVA14 (Category.LANGUAGE, false, false, "Oracle Java 14", Vendor.ORACLE, "2004-09-01", "2009-11-01", "2009-11-01"),
 	ORA_JAVA15 (Category.LANGUAGE, false, false, "Oracle Java 15", Vendor.ORACLE, "2004-09-01", "2009-11-01", "2009-11-01"),
 	ORA_JAVA16 (Category.LANGUAGE, false, false, "Oracle Java 16", Vendor.ORACLE, "2004-09-01", "2009-11-01", "2009-11-01"),
+	JAVA_EE5 (Category.FRAMEWORK, true, false, "Java EE 5 Specs", Vendor.JAVAEE_COMMUNITY, "2004-09-01", "2009-11-01", "2009-11-01"),
 	JAVA_EE6 (Category.FRAMEWORK, true, false, "Java EE 6 Specs", Vendor.JAVAEE_COMMUNITY, "2004-09-01", "2009-11-01", "2009-11-01"),
 	JAVA_EE7 (Category.FRAMEWORK, true, false, "Java EE 7 Specs", Vendor.JAVAEE_COMMUNITY, "2004-09-01", "2009-11-01", "2009-11-01"),
 	JAKARTA_EE8 (Category.FRAMEWORK, true, false, "Jakarta EE 8 Specs", Vendor.JAKARTAEE_ECLIPSE_FOUNDATION, "2004-09-01", "2009-11-01", "2009-11-01"),
+	WLS_1036 (Category.MIDDLEWARE, false, false, "Oracle WebLogic 10.3.6", Vendor.ORACLE, "2012-02-26", "2014-06-01", "2014-06-01"),
 	WLS_12214 (Category.MIDDLEWARE, false, false, "Oracle WebLogic 12.2.1.4", Vendor.ORACLE, "2019-09-27", "2022-08-01", "2022-08-01"),
 	APACHE_HTTP_2441 (Category.MIDDLEWARE, true, false, "Apache HTTP Server 2.4.4.1", Vendor.APACHE, "2019-08-14", "2019-08-14", "2019-08-14");
 	
