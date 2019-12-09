@@ -57,7 +57,7 @@ public class Software implements Comparable<Software> {
 	}
 
 	public String getReleaseDate() {
-		return new SimpleDateFormat("yyyy-MM-dd").format(technology.getReleaseDate());
+		return new SimpleDateFormat("yyyy-MM-dd").format(technology.getReleaseDate()).trim();
 	}
 	
 	public String getLastFreePersonnalPublicUpdateDate() {
