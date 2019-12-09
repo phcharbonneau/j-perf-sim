@@ -12,15 +12,13 @@ import java.util.Date;
 public class Software {
 	
 	private Technology technology;
-	private LifeCycle lifeCycle;
 	private String refURL;
 	private Date releaseDate;
 	private Date lastFreePublicUpdateDate;
 	private Date extendedSupportDate;
 	
-	public Software(Technology technology, LifeCycle lifeCycle) {
+	public Software(Technology technology) {
 		this.technology = technology;
-		this.lifeCycle = lifeCycle;
 	}
 
 	public Technology getTechnology() {
@@ -29,14 +27,6 @@ public class Software {
 
 	public void setTechnology(Technology technology) {
 		this.technology = technology;
-	}
-
-	public LifeCycle getLifeCycle() {
-		return lifeCycle;
-	}
-
-	public void setLifeCycle(LifeCycle lifeCycle) {
-		this.lifeCycle = lifeCycle;
 	}
 
 	public String getRefURL() {
@@ -113,7 +103,7 @@ public class Software {
 		return technology.getVendor().toString();
 	}
 	
-	public boolean isEOL() {
-		return lifeCycle.toString().equals("EOL");
+	public boolean isEol() {
+		return technology.isEol();
 	}
 }
