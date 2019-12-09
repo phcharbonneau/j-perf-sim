@@ -11,7 +11,7 @@ import java.util.Date;
  * @author phcha
  *
  */
-public class Software {
+public class Software implements Comparable<Software> {
 	
 	private Technology technology;
 	private Collection<Technology> techDependencyList = new ArrayList<Technology>();
@@ -90,4 +90,16 @@ public class Software {
 	public Collection<Technology> getTechDependencyList() {
 		return techDependencyList;
 	}
+
+	@Override
+	public int compareTo(Software o) {
+		
+		if ((technology.getReleaseDate().before(o.technology.getReleaseDate()))) {
+			return -1;
+		} else {
+			return 1;
+		}
+		
+	}
+
 }
