@@ -30,7 +30,7 @@ public class SoftwareController {
 		/****** TODO: automate data mapping and refresh where possible..****/
 		/**********  Build list of all languages ************************/
 		Software openjdk8 = new Software(Technology.OPENJDK8);
-		openjdk8.setRefURL("https://www.oracle.com/java/technologies/javase-java-archive-javase6-downloads.htmls");
+		openjdk8.setRefURL("https://wiki.openjdk.java.net/display/jdk8u/Main");
 		coll.add(openjdk8);
 		
 		Software java5_ora = new Software(Technology.ORA_JAVA5);
