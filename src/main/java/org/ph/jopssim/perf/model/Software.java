@@ -82,4 +82,8 @@ public class Software {
 	public void addTechDependency(Technology tech) {
 		techDependencyList.add(tech);
 	}
+
+	public Collection<Technology> getTechDependencyList() {
+		return techDependencyList;
+	}
 }
