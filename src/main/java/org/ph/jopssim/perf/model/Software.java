@@ -61,11 +61,11 @@ public class Software implements Comparable<Software> {
 	}
 	
 	public String getLastFreePersonnalPublicUpdateDate() {
-		return new SimpleDateFormat("yyyy-MM-dd").format(technology.getLastFreePersonnalPublicUpdateDate());
+		return new SimpleDateFormat("yyyy-MM-dd").format(technology.getLastFreePersonnalPublicUpdateDate()).trim();
 	}
 	
 	public String getLastFreeCommercialPublicUpdateDate() {
-		return new SimpleDateFormat("yyyy-MM-dd").format(technology.getLastFreeCommercialPublicUpdateDate());
+		return new SimpleDateFormat("yyyy-MM-dd").format(technology.getLastFreeCommercialPublicUpdateDate()).trim();
 	}
 
 	public String getVersion() {
