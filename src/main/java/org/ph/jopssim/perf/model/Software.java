@@ -13,7 +13,6 @@ public class Software {
 	
 	private Technology technology;
 	private String refURL;
-	private Date releaseDate;
 	private Date lastFreePublicUpdateDate;
 	private Date extendedSupportDate;
 	
@@ -74,21 +73,7 @@ public class Software {
 	}
 
 	public Date getReleaseDate() {
-		return releaseDate;
-	}
-
-	public void setReleaseDate(String releaseDate) {
-		
-		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-		Date newDate = null;
-		
-		try {
-			newDate = dateFormat.parse(releaseDate);
-		} catch (ParseException e) {
-			throw new IllegalArgumentException("Invalid extended Support Date format:" +e.getMessage(), e);
-		}
-		
-		this.releaseDate = newDate;
+		return technology.getReleaseDate();
 	}
 
 	public String getVersion() {
