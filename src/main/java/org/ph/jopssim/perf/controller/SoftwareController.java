@@ -27,6 +27,10 @@ public class SoftwareController {
 		
 		/****** TODO: automate data mapping and refresh where possible..****/
 		/**********  Build list of all languages ************************/
+		Software openjdk8 = new Software(Technology.OPENJDK8);
+		openjdk8.setRefURL("https://www.oracle.com/java/technologies/javase-java-archive-javase6-downloads.htmls");
+		coll.add(openjdk8);
+		
 		Software java5_ora = new Software(Technology.ORA_JAVA5);
 		java5_ora.addTechDependency(Technology.OPENJDK5);
 		java5_ora.setRefURL("https://www.oracle.com/java/technologies/java-archive-javase5-downloads.html");
@@ -48,7 +52,7 @@ public class SoftwareController {
 		wls12214_ora.setExtendedSupportDate("2025-08-01");
 		coll.add(wls12214_ora);
 		
-		Software apache_http2441 = new Software(Technology.APACHE_HTTPSERVER_2441);
+		Software apache_http2441 = new Software(Technology.APACHE_HTTP_2441);
 		apache_http2441.setRefURL("http://www.apache.org/dist/httpd/Announcement2.4.html");
 		coll.add(apache_http2441);
 		

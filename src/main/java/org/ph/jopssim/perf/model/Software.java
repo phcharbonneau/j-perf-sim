@@ -60,8 +60,12 @@ public class Software {
 		return new SimpleDateFormat("yyyy-MM-dd").format(technology.getReleaseDate());
 	}
 	
-	public String getLastFreePublicUpdateDate() {
-		return new SimpleDateFormat("yyyy-MM-dd").format(technology.getLastFreePublicUpdateDate());
+	public String getLastFreePersonnalPublicUpdateDate() {
+		return new SimpleDateFormat("yyyy-MM-dd").format(technology.getLastFreePersonnalPublicUpdateDate());
+	}
+	
+	public String getLastFreeCommercialPublicUpdateDate() {
+		return new SimpleDateFormat("yyyy-MM-dd").format(technology.getLastFreeCommercialPublicUpdateDate());
 	}
 
 	public String getVersion() {
