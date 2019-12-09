@@ -14,7 +14,7 @@ public enum Technology {
 	OPENJDK5 (Category.LANGUAGE, true, true, "OpenJDK 5", Vendor.OPENJDK_COMMUNITY, "2004-09-01", "2009-11-01", "2009-11-01"),
 	OPENJDK6 (Category.LANGUAGE, true, true, "OpenJDK 6", Vendor.OPENJDK_COMMUNITY, "2006-12-01", "2013-04-01", "2013-04-01"),
 	OPENJDK7 (Category.LANGUAGE, true, true, "OpenJDK 7", Vendor.OPENJDK_COMMUNITY, "2004-09-01", "2009-11-01", "2009-11-01"),
-	OPENJDK8 (Category.LANGUAGE, true, false, "OpenJDK 8", Vendor.OPENJDK_COMMUNITY, "2014-03-01", "2020-03-01", "2020-03-01"),
+	OPENJDK8 (Category.LANGUAGE, true, false, "OpenJDK 8", Vendor.OPENJDK_COMMUNITY, "2014-03-01", "2020-03-01", "2019-01-01"),
 	OPENJDK9 (Category.LANGUAGE, true, false, "OpenJDK 9", Vendor.OPENJDK_COMMUNITY, "2004-09-01", "2009-11-01", "2009-11-01"),
 	OPENJDK10 (Category.LANGUAGE, true, false, "OpenJDK 10", Vendor.OPENJDK_COMMUNITY, "2004-09-01", "2009-11-01", "2009-11-01"),
 	OPENJDK11 (Category.LANGUAGE, true, false, "OpenJDK 11", Vendor.OPENJDK_COMMUNITY, "2004-09-01", "2009-11-01", "2009-11-01"),
