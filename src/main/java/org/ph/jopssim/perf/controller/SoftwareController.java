@@ -34,7 +34,7 @@ public class SoftwareController {
 		coll.add(java5_ora);
 		
 		Software java6_ora = new Software(Technology.ORA_JAVA6);
-		java5_ora.addTechDependency(Technology.OPENJDK6);
+		java6_ora.addTechDependency(Technology.OPENJDK6);
 		java6_ora.setRefURL("https://www.oracle.com/java/technologies/javase-java-archive-javase6-downloads.htmls");
 		java6_ora.setExtendedSupportDate("2018-12-01");
 		coll.add(java6_ora);
