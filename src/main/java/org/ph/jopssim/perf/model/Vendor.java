@@ -1,5 +1,10 @@
 package org.ph.jopssim.perf.model;
 
+/**
+ * 
+ * @author pierre-hugues.charbo
+ *
+ */
 public enum Vendor {
 	APACHE,
 	OPENJDK_COMMUNITY,

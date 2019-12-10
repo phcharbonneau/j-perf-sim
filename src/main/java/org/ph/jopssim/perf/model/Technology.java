@@ -47,7 +47,7 @@ public enum Technology {
 	private final License license;
 	private final boolean eol;
 	private final String version;
-	private final Vendor vendor; // associated vendor or open source community
+	private final Vendor vendor; // associated vendor or open source community 
 	private Date releaseDate = null;
 	private Date lastFreePersonnalPublicUpdateDate;
 	private Date lastFreeCommercialPublicUpdateDate;
