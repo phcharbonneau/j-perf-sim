@@ -17,4 +17,8 @@ public enum License {
 	License(String type) {
 		this.type = type;
 	}
+
+	public String getType() {
+		return type;
+	}
 }
