@@ -48,6 +48,10 @@ public class SoftwareController {
 		java6_ibm.setRefURL("https://developer.ibm.com/javasdk/downloads/sdk6/");
 		coll.add(java6_ibm);
 		
+		Software java7_ibm = new Software(Technology.IBM_JAVA7);
+		java6_ibm.setRefURL("https://developer.ibm.com/javasdk/downloads/sdk6/");
+		coll.add(java7_ibm);
+		
 		Software java7_ora = new Software(Technology.ORA_JAVA7);
 		java7_ora.setRefURL("https://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase7-521261.html");
 		java7_ora.setExtendedSupportDate("2018-12-01");
