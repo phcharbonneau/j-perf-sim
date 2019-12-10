@@ -25,7 +25,7 @@ public enum Technology {
 	OPENJDK16 (Category.LANGUAGE, License.OPENSOURCE_GPL, false, "OpenJDK 16", Vendor.OPENJDK_COMMUNITY, "2004-09-01", "2009-11-01", "2009-11-01"),
 	ORA_JAVA5 (Category.LANGUAGE, License.COMMERCIAL_ORA, true, "Oracle Java 5", Vendor.ORACLE, "2004-09-01", "2009-11-01", "2009-11-01"),
 	ORA_JAVA6 (Category.LANGUAGE, License.COMMERCIAL_ORA, true, "Oracle Java 6", Vendor.ORACLE, "2004-09-01", "2009-11-01", "2009-11-01"),
-	ORA_JAVA7 (Category.LANGUAGE, License.COMMERCIAL_ORA, true, "Oracle Java 7", Vendor.ORACLE, "2004-09-01", "2009-11-01", "2009-11-01"),
+	ORA_JAVA7 (Category.LANGUAGE, License.COMMERCIAL_ORA, true, "Oracle Java 7", Vendor.ORACLE, "2011-07-01", "2015-04-15", "2015-04-15"),
 	ORA_JAVA8 (Category.LANGUAGE, License.COMMERCIAL_ORA, false, "Oracle Java 8", Vendor.ORACLE, "2004-09-01", "2009-11-01", "2020-03-01"),
 	ORA_JAVA9 (Category.LANGUAGE, License.COMMERCIAL_ORA, false, "Oracle Java 9", Vendor.ORACLE, "2004-09-01", "2009-11-01", "2009-11-01"),
 	ORA_JAVA10 (Category.LANGUAGE, License.COMMERCIAL_ORA, false, "Oracle Java 10", Vendor.ORACLE, "2004-09-01", "2009-11-01", "2009-11-01"),

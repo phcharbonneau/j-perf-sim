@@ -44,6 +44,11 @@ public class SoftwareController {
 		java6_ora.setExtendedSupportDate("2018-12-01");
 		coll.add(java6_ora);
 		
+		Software java7_ora = new Software(Technology.ORA_JAVA6);
+		java7_ora.setRefURL("https://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase7-521261.html");
+		java7_ora.setExtendedSupportDate("2018-12-01");
+		coll.add(java7_ora);
+		
 		
 		/**********  Build list of all Middlewares ************************/
 		Software wls1036_ora = new Software(Technology.WLS_1036);

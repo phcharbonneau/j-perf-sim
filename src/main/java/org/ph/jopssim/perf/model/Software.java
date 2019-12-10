@@ -81,8 +81,7 @@ public class Software implements Comparable<Software> {
 	}
 	
 	public String getLicense() {
-		//
-		return technology.getLicense().toString();
+		return technology.getLicense().getType();
 	}
 	
 	public boolean isEol() {
