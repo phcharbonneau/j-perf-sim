@@ -46,7 +46,9 @@ public enum Technology {
 	WLS_12214 (Category.MIDDLEWARE, License.COMMERCIAL_ORA, false, "Oracle WebLogic 12.2.1.4", Vendor.ORACLE, "2019-09-27", "2022-08-01", "2022-08-01"),
 	WAS_800 (Category.MIDDLEWARE, License.COMMERCIAL_IBM, true, "WebSphere Application Server  V8.0.x", Vendor.IBM, "2011-07-11", "2016-12-16", "2016-12-16"),
 	WAS_850 (Category.MIDDLEWARE, License.COMMERCIAL_IBM, false, "WebSphere Application Server  V8.5.x", Vendor.IBM, "2012-12-14", "2020-09-18", "2020-09-18"),
-	APACHE_HTTP_2441 (Category.MIDDLEWARE, License.OPENSOURCE_ASF2, false, "Apache HTTP Server 2.4.4.1", Vendor.APACHE, "2019-08-14", "2019-08-14", "2019-08-14");
+	APACHE_HTTP_2441 (Category.MIDDLEWARE, License.OPENSOURCE_ASF2, false, "Apache HTTP Server 2.4.4.1", Vendor.APACHE, "2019-08-14", "2019-08-14", "2019-08-14"),
+	ORA_OSM73 (Category.MIDDLEWARE, License.COMMERCIAL_ORA, false, "Oracle OSM 7.3.x", Vendor.ORACLE, "2015-07-01", "2020-07-01", "2020-07-01"),
+	ORA_OSM74 (Category.MIDDLEWARE, License.COMMERCIAL_ORA, false, "Oracle OSM 7.4.x", Vendor.ORACLE, "2019-07-01", "2024-07-01", "2024-07-01");
 	
 	private final Category category;
 	private final License license;

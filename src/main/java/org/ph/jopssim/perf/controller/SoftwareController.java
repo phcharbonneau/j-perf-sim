@@ -77,6 +77,20 @@ public class SoftwareController {
 		wls12214_ora.setExtendedSupportDate("2025-08-01");
 		coll.add(wls12214_ora);
 		
+		Software osm73_ora = new Software(Technology.ORA_OSM73);
+		osm73_ora.addTechDependency(Technology.ORA_JAVA8);
+		osm73_ora.addTechDependency(Technology.JAVA_EE7);
+		osm73_ora.setRefURL("https://docs.oracle.com/en/industries/communications/order-service-management/index.html");
+		osm73_ora.setExtendedSupportDate("2023-07-01");
+		coll.add(osm73_ora);
+		
+		Software osm74_ora = new Software(Technology.ORA_OSM74);
+		osm74_ora.addTechDependency(Technology.ORA_JAVA8);
+		osm74_ora.addTechDependency(Technology.JAVA_EE7);
+		osm74_ora.setRefURL("https://docs.oracle.com/en/industries/communications/order-service-management/index.html");
+		osm74_ora.setExtendedSupportDate("2027-07-01");
+		coll.add(osm74_ora);
+		
 		Software was800_ora = new Software(Technology.WAS_800);
 		was800_ora.addTechDependency(Technology.IBM_JAVA6);
 		was800_ora.addTechDependency(Technology.JAVA_EE6);
@@ -92,6 +106,7 @@ public class SoftwareController {
 		Software apache_http2441 = new Software(Technology.APACHE_HTTP_2441);
 		apache_http2441.setRefURL("http://www.apache.org/dist/httpd/Announcement2.4.html");
 		coll.add(apache_http2441);
+		
 		
 		
 		/**********  Build list of all specialized middleware products ************************/
