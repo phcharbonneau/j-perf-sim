@@ -44,7 +44,11 @@ public class SoftwareController {
 		java6_ora.setExtendedSupportDate("2018-12-01");
 		coll.add(java6_ora);
 		
-		Software java7_ora = new Software(Technology.ORA_JAVA6);
+		Software java6_ibm = new Software(Technology.IBM_JAVA6);
+		java6_ibm.setRefURL("https://developer.ibm.com/javasdk/downloads/sdk6/");
+		coll.add(java6_ibm);
+		
+		Software java7_ora = new Software(Technology.ORA_JAVA7);
 		java7_ora.setRefURL("https://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase7-521261.html");
 		java7_ora.setExtendedSupportDate("2018-12-01");
 		coll.add(java7_ora);
@@ -65,9 +69,9 @@ public class SoftwareController {
 		wls12214_ora.setExtendedSupportDate("2025-08-01");
 		coll.add(wls12214_ora);
 		
-		Software was800_ora = new Software(Technology.WLS_12214);
-		was800_ora.addTechDependency(Technology.ORA_JAVA8);
-		was800_ora.addTechDependency(Technology.JAVA_EE7);
+		Software was800_ora = new Software(Technology.WAS_800);
+		was800_ora.addTechDependency(Technology.IBM_JAVA6);
+		was800_ora.addTechDependency(Technology.JAVA_EE6);
 		was800_ora.setRefURL("https://www.ibm.com/support/pages/80014-websphere-application-server-v80-fix-pack-14");
 		was800_ora.setExtendedSupportDate("2018-04-30");
 		coll.add(was800_ora);
