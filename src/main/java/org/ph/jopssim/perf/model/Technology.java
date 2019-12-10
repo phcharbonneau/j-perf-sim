@@ -37,7 +37,7 @@ public enum Technology {
 	ORA_JAVA15 (Category.LANGUAGE, License.COMMERCIAL_ORA, false, "Oracle Java 15", Vendor.ORACLE, "2004-09-01", "2009-11-01", "2009-11-01"),
 	ORA_JAVA16 (Category.LANGUAGE, License.COMMERCIAL_ORA, false, "Oracle Java 16", Vendor.ORACLE, "2004-09-01", "2009-11-01", "2009-11-01"),
 	IBM_JAVA6 (Category.LANGUAGE, License.COMMERCIAL_IBM, true, "IBM Java 6", Vendor.IBM, "2007-11-01", "2017-09-01", "2017-09-01"),
-	IBM_JAVA7 (Category.LANGUAGE, License.COMMERCIAL_IBM, true, "IBM Java 7", Vendor.IBM, "2011-09-01", "2022-04-01", "2022-04-01"),
+	IBM_JAVA7 (Category.LANGUAGE, License.COMMERCIAL_IBM, false, "IBM Java 7", Vendor.IBM, "2011-09-01", "2022-04-01", "2022-04-01"),
 	JAVA_EE5 (Category.FRAMEWORK, License.OPENSOURCE_GPL, true, "Java EE 5 Specs", Vendor.JAVAEE_COMMUNITY, "2004-09-01", "2009-11-01", "2009-11-01"),
 	JAVA_EE6 (Category.FRAMEWORK, License.OPENSOURCE_GPL, true, "Java EE 6 Specs", Vendor.JAVAEE_COMMUNITY, "2004-09-01", "2009-11-01", "2009-11-01"),
 	JAVA_EE7 (Category.FRAMEWORK, License.OPENSOURCE_GPL, false, "Java EE 7 Specs", Vendor.JAVAEE_COMMUNITY, "2004-09-01", "2009-11-01", "2009-11-01"),
