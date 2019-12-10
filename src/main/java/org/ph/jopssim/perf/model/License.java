@@ -8,8 +8,8 @@ package org.ph.jopssim.perf.model;
  */
 public enum License {
 	COMMERCIAL_ORA("Oracle"),
-	OPENSOURCE_GPL("The GNU General Public License (GPL)"),
-	OPENSOURCE_ASF2("Apache License 2.0)"),
+	OPENSOURCE_GPL("The GNU General Public License"),
+	OPENSOURCE_ASF2("Apache License 2.0"),
 	OPENSOURCE_ECLIPSE_TSK("Eclipse TCK"); //
 	
 	private final String type;
