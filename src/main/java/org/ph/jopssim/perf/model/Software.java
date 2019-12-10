@@ -80,6 +80,10 @@ public class Software implements Comparable<Software> {
 		return technology.getVendor().toString();
 	}
 	
+	public String getLicense() {
+		return technology.getLicense().toString();
+	}
+	
 	public boolean isEol() {
 		return technology.isEol();
 	}
