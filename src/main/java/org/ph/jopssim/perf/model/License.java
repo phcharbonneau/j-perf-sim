@@ -9,6 +9,7 @@ package org.ph.jopssim.perf.model;
 public enum License {
 	COMMERCIAL_ORA("Oracle"),
 	COMMERCIAL_IBM("IBM"),
+	COMMERCIAL_RH_IBM("RedHat (IBM)"),
 	OPENSOURCE_GPL("The GNU General Public License"),
 	OPENSOURCE_ASF2("Apache License 2.0"),
 	OPENSOURCE_ECLIPSE_TSK("Eclipse TCK"); //

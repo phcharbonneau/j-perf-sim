@@ -34,6 +34,10 @@ public class SoftwareController {
 		openjdk8.setRefURL("https://wiki.openjdk.java.net/display/jdk8u/Main");
 		coll.add(openjdk8);
 		
+		Software openjdk8_rh = new Software(Technology.RH_OPENJDK8);
+		openjdk8_rh.setRefURL("https://access.redhat.com/articles/1299013");
+		coll.add(openjdk8_rh);
+		
 		Software java5_ora = new Software(Technology.ORA_JAVA5);
 		java5_ora.setRefURL("https://www.oracle.com/java/technologies/java-archive-javase5-downloads.html");
 		java5_ora.setExtendedSupportDate("2015-04-01");
@@ -49,7 +53,7 @@ public class SoftwareController {
 		coll.add(java6_ibm);
 		
 		Software java7_ibm = new Software(Technology.IBM_JAVA7);
-		java6_ibm.setRefURL("https://developer.ibm.com/javasdk/downloads/sdk6/");
+		java7_ibm.setRefURL("https://developer.ibm.com/javasdk/downloads/sdk7/");
 		coll.add(java7_ibm);
 		
 		Software java7_ora = new Software(Technology.ORA_JAVA7);
