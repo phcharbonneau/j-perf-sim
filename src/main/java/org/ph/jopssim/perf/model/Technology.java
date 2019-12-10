@@ -41,6 +41,7 @@ public enum Technology {
 	JAKARTA_EE8 (Category.FRAMEWORK, License.OPENSOURCE_ECLIPSE_TSK, false, "Jakarta EE 8 Specs", Vendor.JAKARTAEE_ECLIPSE_FOUNDATION, "2004-09-01", "2009-11-01", "2009-11-01"),
 	WLS_1036 (Category.MIDDLEWARE, License.COMMERCIAL_ORA, true, "Oracle WebLogic 10.3.6", Vendor.ORACLE, "2012-02-26", "2014-06-01", "2014-06-01"),
 	WLS_12214 (Category.MIDDLEWARE, License.COMMERCIAL_ORA, false, "Oracle WebLogic 12.2.1.4", Vendor.ORACLE, "2019-09-27", "2022-08-01", "2022-08-01"),
+	WAS_800 (Category.MIDDLEWARE, License.COMMERCIAL_IBM, true, "WebSphere Application Server  V8.0.x", Vendor.IBM, "2011-07-11", "2016-12-16", "2016-12-16"),
 	APACHE_HTTP_2441 (Category.MIDDLEWARE, License.OPENSOURCE_ASF2, false, "Apache HTTP Server 2.4.4.1", Vendor.APACHE, "2019-08-14", "2019-08-14", "2019-08-14");
 	
 	private final Category category;

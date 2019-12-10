@@ -65,6 +65,13 @@ public class SoftwareController {
 		wls12214_ora.setExtendedSupportDate("2025-08-01");
 		coll.add(wls12214_ora);
 		
+		Software was800_ora = new Software(Technology.WLS_12214);
+		was800_ora.addTechDependency(Technology.ORA_JAVA8);
+		was800_ora.addTechDependency(Technology.JAVA_EE7);
+		was800_ora.setRefURL("https://www.ibm.com/support/pages/80014-websphere-application-server-v80-fix-pack-14");
+		was800_ora.setExtendedSupportDate("2018-04-30");
+		coll.add(was800_ora);
+		
 		Software apache_http2441 = new Software(Technology.APACHE_HTTP_2441);
 		apache_http2441.setRefURL("http://www.apache.org/dist/httpd/Announcement2.4.html");
 		coll.add(apache_http2441);
