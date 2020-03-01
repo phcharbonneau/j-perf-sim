@@ -111,6 +111,7 @@ public class SoftwareController {
 		
 		/**********  Build list of all specialized middleware products ************************/
 		Collections.sort((List<Software>) coll);
+		System.out.println("Software Controller invoked: "+System.currentTimeMillis());
 		return coll;
     }
 }
