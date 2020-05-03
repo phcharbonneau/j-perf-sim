@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class JOpsSimApplication {
 	
 	public static void main(String[] args) {
-		System.out.println("Hello PH & Eric!!");
+		System.out.println("Starting Java Performance Simulator...");
 		
 		SpringApplication.run(JOpsSimApplication.class, args);
 	}
