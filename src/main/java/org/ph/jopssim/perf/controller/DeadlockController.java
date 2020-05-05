@@ -1,6 +1,5 @@
 package org.ph.jopssim.perf.controller;
 
-import org.ph.jopssim.threadsafety.model.StuckThread;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,6 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DeadlockController {
 	
+	private static final int SLEEP_TIME = 30000;
+	
 	private Object lock1 = new Object();
 	private Object lock2 = new Object();
 	
@@ -22,14 +23,14 @@ public class DeadlockController {
 		if (lockOrder == 1) {
 			synchronized (lock1) { // attempt to acquire Lock #1...
 				// do some work for 30 secs...
-				try { Thread.sleep(30000); } catch (InterruptedException ignore) {}
+				try { Thread.sleep(SLEEP_TIME); } catch (InterruptedException ignore) {}
 				
 				synchronized (lock2) {} // attempt to acquire Lock #2...
 			}
 		} else if (lockOrder == 2) {
 			synchronized (lock2) { // attempt to acquire Lock #2...
 				// do some work for 30 secs...
-				try { Thread.sleep(30000); } catch (InterruptedException ignore) {}
+				try { Thread.sleep(SLEEP_TIME); } catch (InterruptedException ignore) {}
 				
 				synchronized (lock1) {} // attempt to acquire Lock #1...
 			}
@@ -37,6 +38,4 @@ public class DeadlockController {
 		
 		return "threadLock() completed!";
     }
-	
-	
 }

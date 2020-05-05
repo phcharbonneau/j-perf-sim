@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class MyAccountController {
 	
 	private final BankAccountService service;
-	private long accountNb = 0l;
 	
 	@Autowired
 	public MyAccountController(BankAccountService service) {
@@ -27,7 +26,7 @@ public class MyAccountController {
     public BankAccount account(@RequestParam(value="userID", defaultValue="PH") String userID) {
 		
 		// obtain the current user bank account number
-		accountNb = service.getAccountNb(userID);
+		long accountNb = service.getAccountNb(userID);
 		
 		// return the current Bank account Nb
 		return new BankAccount(accountNb);
