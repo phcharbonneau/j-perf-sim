@@ -42,7 +42,7 @@ public class CPUController {
 			// allocate memory but don't do anything -> eligible for GC on method exit
 			byte[] dataSize = new byte[MEM_ALLOCATION_MB];
 			
-			// generate more CPU processing overhead...
+			// generate more CPU processing overhead....
 			System.currentTimeMillis();
 		}
 		
