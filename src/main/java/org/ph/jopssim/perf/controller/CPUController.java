@@ -43,7 +43,7 @@ public class CPUController {
 			byte[] dataSize = new byte[MEM_ALLOCATION_MB];
 			
 			// generate more CPU processing overhead...
-			System.currentTimeMillis(); 
+			System.currentTimeMillis();
 		}
 		
 		return spin;
